@@ -88,6 +88,6 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.WORKFLOW_TOKEN }}
-        repository: corp-ais/natthasw-pipeline
+        repository: natthasw/natthasw-pipeline
         event-type: natthasw-tutorial-backend-cd-dev
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
